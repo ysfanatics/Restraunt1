@@ -1,0 +1,44 @@
+/* Reset */
+* {margin:0; padding:0; box-sizing:border-box;}
+body {font-family: 'Arial', sans-serif; line-height:1.6; color:#333; background:#fff;}
+
+/* Navbar */
+.navbar {display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; background:#fff; position:sticky; top:0; z-index:100;}
+.navbar .logo a {font-size:1.5rem; font-weight:bold; color:#222; text-decoration:none;}
+.nav-links {list-style:none; display:flex;}
+.nav-links li {margin-left:1.5rem;}
+.nav-links a {text-decoration:none; color:#333; font-weight:500;}
+.nav-links a.active, .nav-links a:hover {color:#ff6347;}
+.hamburger {display:none; font-size:2rem; cursor:pointer;}
+
+/* Hero */
+.hero {position:relative; text-align:center;}
+.hero img {width:100%; height:auto;}
+.hero-text {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:#fff;}
+.hero-text h1 {font-size:3rem; margin-bottom:0.5rem;}
+.hero-text p {font-size:1.2rem; margin-bottom:1rem;}
+.btn {padding:0.8rem 1.5rem; background:#ff6347; color:#fff; text-decoration:none; border-radius:5px;}
+
+/* Sections */
+section {padding:3rem 2rem; text-align:center;}
+.menu-grid {display:flex; flex-wrap:wrap; justify-content:center; gap:2rem;}
+.menu-item {border:1px solid #eee; padding:1rem; border-radius:8px; width:250px; text-align:center;}
+.menu-item img {width:100%; border-radius:8px; margin-bottom:0.5rem;}
+.menu-item button {margin-top:0.5rem; padding:0.5rem 1rem; background:#ff6347; color:#fff; border:none; cursor:pointer; border-radius:5px;}
+.menu-item button:hover {background:#e5533d;}
+
+/* Cart Section */
+.cart-section {max-width:600px; margin:0 auto; text-align:left;}
+.cart-item {display:flex; justify-content:space-between; margin-bottom:0.5rem;}
+#order-form input, #order-form select, #order-form textarea {width:100%; margin:0.5rem 0; padding:0.5rem; border-radius:5px; border:1px solid #ccc;}
+#order-form button {padding:0.7rem 1.5rem; background:#ff6347; color:#fff; border:none; border-radius:5px; cursor:pointer; width:100%;}
+
+/* Footer */
+footer {background:#222; color:#fff; padding:1rem; text-align:center;}
+
+/* Responsive */
+@media(max-width:768px){
+    .nav-links {display:none; flex-direction:column; background:#fff; position:absolute; top:70px; right:0; width:200px; border:1px solid #eee;}
+    .nav-links.show {display:flex;}
+    .hamburger {display:block;}
+}
