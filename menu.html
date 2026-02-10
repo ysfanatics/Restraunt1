@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu - La Luna</title>
+<link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">La Luna</a></div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="menu-section">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+
+        <div class="menu-item">
+            <img src="Images/dish1.jpg" alt="Signature Pasta">
+            <h3>Signature Pasta</h3>
+            <p>₹350</p>
+            <button onclick="addToCart('Signature Pasta',350)">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images/dish2.jpg" alt="Grilled Steak">
+            <h3>Grilled Steak</h3>
+            <p>₹650</p>
+            <button onclick="addToCart('Grilled Steak',650)">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images/dish3.jpg" alt="Chocolate Dessert">
+            <h3>Chocolate Dessert</h3>
+            <p>₹250</p>
+            <button onclick="addToCart('Chocolate Dessert',250)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 La Luna Restaurant</p>
+</footer>
+
+<script src="Js/main.js"></script>
+</body>
+</html>
