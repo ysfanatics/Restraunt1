@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart - La Luna</title>
+<link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">La Luna</a></div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html" class="active">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="cart-section">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <h3>Total: ₹<span id="cart-total">0</span></h3>
+
+    <h2>Place Order</h2>
+    <form id="order-form">
+        <input type="text" placeholder="Your Name" id="name" required>
+        <input type="tel" placeholder="Phone Number" id="phone" required>
+        <input type="text" placeholder="Address" id="address" required>
+        <label>Payment Method:</label>
+        <select id="payment-method">
+            <option value="COD">Cash on Delivery</option>
+            <option value="Online UPI">Online Payment (UPI)</option>
+        </select>
+        <button type="submit">Order via WhatsApp</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 La Luna Restaurant</p>
+</footer>
+
+<script src="Js/main.js"></script>
+</body>
+</html>
